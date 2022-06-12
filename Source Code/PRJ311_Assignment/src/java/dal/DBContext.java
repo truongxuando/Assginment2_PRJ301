@@ -22,7 +22,7 @@ public abstract class DBContext<T> {
         try {
             String user = "truongdx";
             String pass = "truongdx";
-            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=rectangle";
+            String url = "jdbc:sqlserver://localhost:1433;databaseName=master";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
         } catch (ClassNotFoundException ex) {
